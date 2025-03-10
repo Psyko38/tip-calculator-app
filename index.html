@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<head>
+			<img src="Ico-SPLITTER.svg" alt="SPLI-TTER ico" />
+		</head>
+		<main>
+			<div class="Input">
+				<form id="myform" action="" onsubmit="return false;">
+					<label for="Bill">
+						<p>Bill</p>
+						<div class="Inpute">
+							<img src="Ico-$.svg" alt="$" />
+							<input
+								type="number"
+								name="Bill"
+								id="Bill"
+								placeholder="0"
+								min="0"
+							/>
+						</div>
+					</label>
+					<label for="Tip" class="Tip">
+						<p>Select Tip %</p>
+						<div>
+							<button>5%</button>
+							<button>10%</button>
+							<button>15%</button>
+							<button>25%</button>
+							<button>50%</button>
+							<input
+								id="Custom"
+								type="text"
+								placeholder="Custom"
+								min="0"
+							/>
+						</div>
+					</label>
+					<label for="People">
+						<p>Number of People</p>
+						<div class="Inpute">
+							<img src="Ico-Person.svg" alt="Peapole" />
+							<input
+								type="number "
+								name="Peapole"
+								id="Peapole"
+								placeholder="0"
+								min="1"
+							/>
+						</div>
+					</label>
+				</form>
+			</div>
+			<div class="Output">
+				<div>
+					<div>
+						<p>Tip Amount</p>
+						<p>/ person</p>
+					</div>
+					<h2 id="Tip">$0.00</h2>
+				</div>
+				<div>
+					<div>
+						<p>Total</p>
+						<p>/ person</p>
+					</div>
+					<h2 id="Total">$0.00</h2>
+				</div>
+				<button>RESET</button>
+			</div>
+		</main>
+	</body>
+	<script src="index.js"></script>
+</html>
