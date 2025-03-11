@@ -8,7 +8,7 @@ body {
 	align-items: center;
 	justify-content: space-evenly;
 	height: 100vh;
-	padding: 0 10%;
+	padding: 0 15%;
 	margin: 0;
 }
 
@@ -64,7 +64,7 @@ input {
 }
 
 .Output button {
-	background-color: #26c2ae;
+	background-color: #0d686d;
 	color: #00474b;
 	border-radius: 5px;
 	border: 0;
@@ -73,22 +73,23 @@ input {
 	line-height: 100%;
 	letter-spacing: 0px;
 	text-align: center;
-	padding: 5px;
+	height: 100%;
 }
 
-.Output > div {
+.Output > div > div {
+	height: 30%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.Output > div > div > p {
+.Output > div > div > div > p {
 	padding: 0;
 	margin: 0;
 }
 
-.Output > div > div > p:first-child {
+.Output > div > div > div > p:first-child {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 100%;
@@ -97,7 +98,7 @@ input {
 	color: #ffffff;
 }
 
-.Output > div > div > p:last-child {
+.Output > div > div > div > p:last-child {
 	font-weight: 700;
 	font-size: 13px;
 	line-height: 100%;
@@ -105,7 +106,7 @@ input {
 	color: #7f9d9f;
 }
 
-.Output > div > h2 {
+.Output > div > div > h2 {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 100%;
@@ -129,7 +130,18 @@ input {
 	border: 0;
 }
 
-.Input label > div {
+.Input label:nth-child(3) > div:nth-child(1) {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Error {
+	color: #e17457 !important;
+	display: none;
+}
+
+.Input label:nth-child(1) > div:last-child,
+.Input label:nth-child(3) > div:last-child {
 	display: flex;
 	width: 100%;
 	padding: 5px;
@@ -142,10 +154,12 @@ input {
 	font-size: 24px;
 	line-height: 100%;
 	letter-spacing: 0px;
-	text-align: right;
+	text-align: center;
 	color: #547878;
 	border-radius: 5px;
 	background-color: #f3f9fa;
+	padding: 0;
+	margin: 0;
 }
 
 .Input > form > label:nth-child(2) > div > button {
@@ -162,14 +176,15 @@ input {
 }
 
 .Inpute:hover {
-	outline: 2px solid #26c2ae;
+	outline: 2px solid #26c2ae !important;
 }
 
 #Custom:hover {
 	outline: 2px solid #26c2ae;
 }
 
-button:hover {
-	background-color: #9fe8df;
-	color: #00474b;
+.Input > form > label:nth-child(2) > div > button:hover,
+.Output button:hover {
+	color: #00474b !important;
+	background-color: #9fe8df !important;
 }
